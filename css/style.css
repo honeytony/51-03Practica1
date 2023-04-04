@@ -4,13 +4,16 @@
     font-size: 16px;
     --main-color: #21243d;
     --primary-color: #ff6464;
-
+    --grey-color: #8695a4;
     /* Font */
     --secondary-color: #00a8cc;
     --dark-blue: #142850;
 
     /* BG */
     --bg-lightblue: #edf7fa;
+
+    /* border color */
+    --border-grey: #e0e0e0;
 }
 
 * {
@@ -152,4 +155,52 @@ section.recent .recent-card-container .description .line {
 section.recent .recent-container {
     display: flex;
     justify-content: space-between;
+}
+
+.works-card-container {
+    display: flex;
+    margin-top: 30px;
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid var(--border-grey);
+}
+
+.works-card-container img {
+    margin-right: 20px;
+}
+
+.works-card-container .works-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.works-card-container .works-card-description .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
+
+.works-card-container .works-card-description h3 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.works-card-container .works-card-description .description .date {
+    width: 62px;
+    height: 26px;
+    border-radius: 16px;
+
+    background-color: #142850;
+    color: white;
+
+    font-size: 1.125rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.works-card-container .works-card-description .description .tag {
+    font-size: 1.25rem;
+    color: var(--grey-color);
 }
